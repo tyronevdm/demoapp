@@ -37,12 +37,12 @@
     }
 
     function getMessage() {
-        $.get('http://localhost:3000/messages', (data) => {
+        $.get('http://lit-anchorage-79526.herokuapp.com::3000/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post('http://localhost:3000/messages', message)
+        $.post('http://lit-anchorage-79526.herokuapp.com::3000/messages', message)
     }
 </script>
